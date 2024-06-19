@@ -42,6 +42,7 @@ import RegistrationStatus from './pages/RegistrationStatus'
 import Logout from './pages/Logout'
 import Redirect from './actions/Redirect'
 import { OSPConsent } from './pages/OSPConsent'
+import { getAssetBase } from 'services/EnvironmentService'
 
 export default function Main() {
   const { t } = useTranslation()
@@ -60,6 +61,19 @@ export default function Main() {
       <OSPConsent />
     )
   }
+  useEffect(() => {
+    const cssId = 'myCss'
+    if (!document.getElementById(cssId)) {
+      const head = document.getElementsByTagName('head')[0]
+      const link = document.createElement('link')
+      link.id = cssId
+      link.rel = 'stylesheet'
+      link.type = 'text/css'
+      link.href = `${getAssetBase()}/fonts/karbon/stylesheet.css`
+      link.media = 'all'
+      head.appendChild(link)
+    }
+  }, [])
 
   useEffect(() => {
     const overlay = searchParams.get('overlay')?.split(':')

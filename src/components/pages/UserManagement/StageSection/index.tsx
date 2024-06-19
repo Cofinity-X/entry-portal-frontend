@@ -30,7 +30,7 @@ export default function SearchSection() {
       <MainHeader
         title={t('content.usermanagement.title')}
         subTitle={t('content.usermanagement.description')}
-        headerHeight={600}
+        headerHeight={300}
         subTitleWidth={787}
         background="LinearGradient1"
         imagePath={`${getAssetBase()}/images/frame/Frame.svg`}

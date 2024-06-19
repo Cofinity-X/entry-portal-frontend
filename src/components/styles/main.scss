@@ -68,12 +68,15 @@ section {
 
 a {
   color: color(primary);
+
   &:hover {
     color: color(primary-hover);
   }
+
   &:active {
     color: color(text-primary);
   }
+
   &:disabled {
     color: color(disabled);
   }
@@ -100,3 +103,7 @@ a {
 .app-back button {
   text-transform: capitalize;
 }
+
+// CofinityX Edits +
+@import 'theme-overrides';
+// CofinityX Edits -

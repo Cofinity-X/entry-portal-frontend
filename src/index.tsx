@@ -31,6 +31,7 @@ import {
   SharedThemeProvider,
   SharedCssBaseline,
 } from '@catena-x/portal-shared-components'
+import { finalTheme } from 'theme.override'
 
 I18nService.init()
 AccessService.init()
@@ -40,7 +41,7 @@ UserService.init((user) => {
     <StrictMode>
       <SharedCssBaseline />
       <Provider store={store}>
-        <SharedThemeProvider>
+        <SharedThemeProvider themeDesign={finalTheme}>
           <AuthProvider user={user}>
             <AuthorizingRouter />
           </AuthProvider>
