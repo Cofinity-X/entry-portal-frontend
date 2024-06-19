@@ -717,6 +717,7 @@ const customTheme = {
         root: {
           borderRadius: 6,
           height: '37px',
+          marginBottom: '10px',
         },
         label: {
           fontWeight: 500,
