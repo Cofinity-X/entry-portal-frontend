@@ -183,6 +183,20 @@ section {
     }
 }
 
+// drop file
+
+#story--dropzone--drop-area--primary-inner .MuiTypography-body2 {
+  font-size: 20px;
+}
+
+#story--dropzone--drop-area--primary-inner .MuiTypography-h3 {
+  font-size: 24px;
+}
+
+#story--dropzone--drop-area--primary-inner .MuiSvgIcon-root {
+  color: $color-secondary;
+}
+
 // global elements
 .global-background {
     background: rgba(250, 250, 250, 1) url(../../../../../public/images/Pattern-cfx.svg) top right no-repeat;
