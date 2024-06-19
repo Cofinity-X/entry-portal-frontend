@@ -785,6 +785,7 @@ const customTheme = {
           fontSize: 16,
         },
         root: {
+          borderRadius: 0,
           '& .MuiTypography-root a': {
             fontSize: 16,
           },
