@@ -164,8 +164,7 @@ main {
 .appoverview-main,
 .app-user-management,
 .invite-main-container,
-.adminBoard,
-.user-details {
+.adminBoard {
     >.MuiBox-root {
         >.MuiBox-root {
             background-color: transparent !important;
@@ -251,6 +250,21 @@ main {
     }
 }
 
+[role="tabpanel"] {
+    .MuiGrid-root {
+        .MuiTypography-h5 {
+            color: #000000 !important;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .MuiTypography-caption3 {
+            color: $color-secondary !important;
+            font-weight: 500;
+        }
+    }
+}
+
 .role-agreements {
     ul {
         li {
@@ -267,7 +281,11 @@ main {
     border-color: $color-secondary !important;
 }
 
-
+.table-section {
+    .MuiChip-root {
+        margin-bottom: 10px;
+    }
+}
 
 // main theme
 main {
