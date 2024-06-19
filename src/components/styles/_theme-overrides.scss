@@ -22,16 +22,16 @@ header {
     display: block;
 }
 
-
-
 .mobileNav {
     display: flex;
     justify-content: space-between;
     position: static;
     z-index: 999;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0;
     align-items: center;
+    background: #fff;
+    padding: 10px 5px;
 }
 
 .mobileHeaderRight {
@@ -44,11 +44,13 @@ header {
 }
 
 .mobileHeader {
-    display: block;
-    width: 50px;
-    height: 50px;
+    display: flex;
     z-index: 999;
+    width: auto;
+    height: auto;
     margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .mobileHeader img {
@@ -63,8 +65,12 @@ header {
     cursor: pointer;
 }
 
-.MenuInfo .MuiSvgIcon-root {
-    cursor: pointer;
+.MenuInfo {
+    width: 350px;
+
+    .MuiSvgIcon-root {
+        cursor: pointer;
+    }
 }
 
 // @media (max-width: $mobile-enable-width) {
@@ -110,7 +116,6 @@ header {
 //         z-index: -9;
 //     }
 // }
-
 
 // global elements
 .global-background {

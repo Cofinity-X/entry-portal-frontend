@@ -48,10 +48,10 @@ export const MenuInfo = ({ main }: { main: Tree[] }) => {
   return (
     <Drawer
       sx={{
-        width: '280px',
+        width: '350px',
         flexShrink: 0,
         '& .MuiDrawer-paper': {
-          width: '280px',
+          width: '370px',
           borderColor: 'transparent',
           boxShadow: '0px 0px 30px 1px rgb(0 0 0 / 40%)',
         },
