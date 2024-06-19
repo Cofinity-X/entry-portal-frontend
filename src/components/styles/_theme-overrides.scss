@@ -2,6 +2,20 @@ $color-primary: #d31184;
 $color-secondary: #4d4d4d;
 $color-gray: #f6f6f6;
 
+// drop file
+
+#story--dropzone--drop-area--primary-inner .MuiTypography-body2 {
+    font-size: 20px;
+}
+
+#story--dropzone--drop-area--primary-inner .MuiTypography-h3 {
+    font-size: 24px;
+}
+
+#story--dropzone--drop-area--primary-inner .MuiSvgIcon-root {
+    color: $color-secondary;
+}
+
 // global elements
 .global-background {
   background: rgba(250, 250, 250, 1)
