@@ -2,433 +2,431 @@ $color-primary: #d31184;
 $color-secondary: #4d4d4d;
 $color-gray: #f6f6f6;
 $mobile-enable-width: 1800px;
-$font-family-primary:
-  'Karbon',
-  -apple-system,
-  'Helvetica Neue',
-  Arial,
-  sans-serif,
-  serif !important;
-
-$navigation-height-balance: 65px;
-
-#app {
-  position: relative;
-  margin-top: $navigation-height-balance;
-}
-
-//mobile layout
-
-header {
-  display: none;
-}
-
-.mobileHeader,
-.mobileNav {
-  display: block;
-}
-
-.mobile-search-icon {
-  display: block;
-}
-
-.mobileNav {
-  display: flex;
-  justify-content: space-between;
-  position: static;
-  z-index: 999;
-  width: 100%;
-  margin-top: 0;
-  align-items: center;
-  background: #fff;
-  padding: 10px 5px;
-  border-bottom: 2px solid $color-gray;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-a.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mobileHeaderRight {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-  position: relative;
-  right: 0px;
-  z-index: -9;
-}
-
-.mobileHeader {
-  display: flex;
-  z-index: 999;
-  width: auto;
-  height: auto;
-  margin-left: 15px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-.mobileHeader img {
-  width: 40px;
-}
-
-.mobile-search-icon {
-  margin-right: 10px;
-  color: $color-primary;
-  position: relative;
-  z-index: -9;
-  cursor: pointer;
-}
-
-.MenuInfo {
-  width: 350px;
-
-  .MuiSvgIcon-root {
-    cursor: pointer;
-  }
-}
-
-.MenuInfo .MuiBox-root {
-  width: 100%;
-}
-
-.userMenuInfo {
-  .MuiTypography-label2 {
-    font-size: 18px;
-  }
-
-  .MuiLink-root,
-  .MuiListItem-root {
-    font-weight: 500;
-    border-radius: 0;
-    color: #000000 !important;
-
-    &:hover {
-      border-radius: 0;
-      background-color: $color-gray;
-      color: #000000 !important;
-
-      .MuiSvgIcon-root {
-        color: #000000 !important;
-      }
-
-      .badgeBox,
-      a {
-        color: #000000 !important;
-      }
-    }
-  }
-}
-
-// full page
-section {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 50px 180px;
-
-  #identity-management-id {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-}
-
-.stage-app-store {
-  .MuiTypography-h2 {
-    font-weight: 400;
-  }
-}
-
-.document-button-link {
-  font-family: $font-family-primary;
-  color: $color-secondary !important;
-}
-
-.appCertificate .mainContainer {
-  max-width: 100%;
-  padding: 0 180px !important;
-}
-
-.notifications {
-  .group {
-    .longMiddleSection {
-      .content {
-        font-family: $font-family-primary;
-
-        pre {
-          font-size: 13px;
-        }
-
-        strong {
-          font-weight: 500;
-        }
-      }
-    }
-
-    > li {
-      margin-right: 10px;
-      margin-left: 10px;
-    }
-  }
-}
-
-.user-management-section {
-  padding-right: 180px;
-  padding-left: 180px;
-  background: none !important;
-}
-
-.table-container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 180px;
-
-  #registration-section-id {
-    max-width: 100%;
-  }
-}
-
-.sectionSubContainer {
-  max-width: 100%;
-  margin: auto;
-
-  .imageVideoTextSideBySide {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .leftAligned,
-  .table-compo {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-// grid cards
-
-.services-card {
-  .MuiTypography-caption3 {
-    line-height: 100%;
-    height: auto;
-  }
-
-  .MuiTypography-h4 {
-    line-height: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  .MuiTypography-label4 {
-    color: $color-secondary;
-
-    &:hover {
-      background-color: $color-gray;
-    }
-  }
-}
-
-// drop file
-
-#story--dropzone--drop-area--primary-inner .MuiTypography-body2 {
-  font-size: 20px;
-}
-
-#story--dropzone--drop-area--primary-inner .MuiTypography-h3 {
-  font-size: 24px;
-}
-
-#story--dropzone--drop-area--primary-inner .MuiSvgIcon-root {
-  color: $color-secondary;
-}
-
-// global elements
-.global-background {
-  background: rgba(250, 250, 250, 1)
-    url(../../../../../public/images/Pattern-cfx.svg) top right no-repeat;
-  background-size: contain;
-}
-
-header {
-  background: #fff;
-}
-
-strong,
-b {
-  font-weight: 500;
-}
-
-.navigationParentContainer {
-  .navigationOverlayContainer {
-    color: #ffffff;
-  }
-}
-
-main {
-  a {
-    color: $color-primary !important;
-
-    svg {
-      color: $color-primary !important;
-
-      path {
-        fill: $color-primary !important;
-      }
-    }
-  }
-
-  .MuiButtonBase-root.MuiChip-root {
-    &:hover,
-    &:focus,
-    &:active {
-      box-shadow: 0px 0px 0px 3px rgba(223, 223, 223, 1) !important;
-    }
-  }
-}
-
-.MuiDataGrid-columnHeaders.MuiDataGrid-withBorderColor {
-  background-color: $color-gray !important;
-}
-
-section {
-  .css-12slnd9,
-  .css-zgcvtz {
-    background-color: $color-gray !important;
-  }
-}
-
-.MuiDialogContent-root {
-  .css-1osn5kl {
-    width: auto;
-  }
-
-  .css-12slnd9 {
-    background: $color-gray;
-  }
-
-  .add-user-title {
-    font-family: $font-family-primary;
-
-    a {
-      color: $color-primary;
-    }
-  }
-
-  a {
-    text-decoration: none !important;
-  }
-
-  .helpText {
-    color: $color-primary !important;
-
-    .MuiSvgIcon-root {
-      padding-right: 5px;
-      color: $color-primary;
-    }
-  }
-}
-
-.MuiTypography-root {
-  font-family:
-    'Karbon',
+$font-family-primary: 'Karbon',
     -apple-system,
     'Helvetica Neue',
     Arial,
     sans-serif,
     serif !important;
+
+$navigation-height-balance: 65px;
+
+#app {
+    position: relative;
+    margin-top: $navigation-height-balance;
 }
 
-.highlightText {
-  color: $color-primary !important;
-  font-weight: 500 !important;
+//mobile layout
+
+header {
+    display: none;
 }
 
-.UserManagement {
-  .css-8q3uco {
-    background-color: $color-gray;
-  }
+.mobileHeader,
+.mobileNav {
+    display: block;
 }
 
-.customHeight {
-  background-color: $color-secondary !important;
-
-  button {
-    color: #fff;
-  }
+.mobile-search-icon {
+    display: block;
 }
 
-.sectionContainer {
-  .sectionSubContainer {
-    .MuiButton-root {
-      background: #ededed;
-      color: #000000;
+.mobileNav {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    z-index: 999;
+    width: 100%;
+    margin-top: 0;
+    align-items: center;
+    background: #fff;
+    padding: 10px 5px;
+    border-bottom: 2px solid $color-gray;
 
-      &:hover,
-      &:focus,
-      &:active {
-        color: #ffffff;
-        background-color: #4d4d4d;
-      }
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+a.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobileHeaderRight {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    position: relative;
+    right: 0px;
+    z-index: -9;
+}
+
+.mobileHeader {
+    display: flex;
+    z-index: 999;
+    width: auto;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.mobileHeader img {
+    width: 40px;
+}
+
+.mobile-search-icon {
+    margin-right: 10px;
+    color: $color-primary;
+    position: relative;
+    z-index: -9;
+    cursor: pointer;
+}
+
+.MenuInfo {
+    width: 350px;
+
+    .MuiSvgIcon-root {
+        cursor: pointer;
     }
-  }
-
-  &#asp-id,
-  &#app-change-process-id,
-  &#technical-user-management-id,
-  &#managed-connector-registration-id,
-  &#intro-id,
-  &#get-status-id,
-  &#manage-idps-id,
-  &#undefined {
-    background-color: rgba(250, 250, 250, 1) !important;
-  }
 }
 
-.header-section {
-  display: block;
-  @extend .global-background;
+.MenuInfo .MuiBox-root {
+    width: 100%;
+}
 
-  img {
-    visibility: hidden;
-  }
+.userMenuInfo {
+    .MuiTypography-label2 {
+        font-size: 18px;
+    }
+
+    .MuiLink-root,
+    .MuiListItem-root {
+        font-weight: 500;
+        border-radius: 0;
+        color: #000000 !important;
+
+        &:hover {
+            border-radius: 0;
+            background-color: $color-gray;
+            color: #000000 !important;
+
+            .MuiSvgIcon-root {
+                color: #000000 !important;
+            }
+
+            .badgeBox,
+            a {
+                color: #000000 !important;
+            }
+        }
+    }
+}
+
+// full page
+section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 180px;
+
+    #identity-management-id {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+.stage-app-store {
+    .MuiTypography-h2 {
+        font-weight: 400;
+    }
+}
+
+.document-button-link {
+    font-family: $font-family-primary;
+    color: $color-secondary !important;
+}
+
+.appCertificate .mainContainer {
+    max-width: 100%;
+    padding: 0 180px !important;
+}
+
+.notifications {
+    .group {
+        .longMiddleSection {
+            .content {
+                font-family: $font-family-primary;
+
+                pre {
+                    font-size: 13px;
+                }
+
+                strong {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        >li {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.user-management-section {
+    padding-right: 180px;
+    padding-left: 180px;
+    background: none !important;
 }
 
 .table-container {
-  .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedStart {
-    &:hover {
-      border-color: $color-secondary;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 180px;
+
+    #registration-section-id {
+        max-width: 100%;
     }
-  }
+}
+
+.sectionSubContainer {
+    max-width: 100%;
+    margin: auto;
+
+    .imageVideoTextSideBySide {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .leftAligned,
+    .table-compo {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+// grid cards
+
+.services-card {
+    .MuiTypography-caption3 {
+        line-height: 100%;
+        height: auto;
+    }
+
+    .MuiTypography-h4 {
+        line-height: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .MuiTypography-label4 {
+        color: $color-secondary;
+
+        &:hover {
+            background-color: $color-gray;
+        }
+    }
+}
+
+// drop file
+
+#story--dropzone--drop-area--primary-inner .MuiTypography-body2 {
+    font-size: 20px;
+}
+
+#story--dropzone--drop-area--primary-inner .MuiTypography-h3 {
+    font-size: 24px;
+}
+
+#story--dropzone--drop-area--primary-inner .MuiSvgIcon-root {
+    color: $color-secondary;
+}
+
+// global elements
+.global-background {
+    background: rgba(250, 250, 250, 1) url(../../../../../public/images/Pattern-cfx.svg) top right no-repeat;
+    background-size: contain;
+}
+
+header {
+    background: #fff;
+}
+
+strong,
+b {
+    font-weight: 500;
+}
+
+.navigationParentContainer {
+    .navigationOverlayContainer {
+        color: #ffffff;
+    }
+}
+
+main {
+    a {
+        color: $color-primary !important;
+
+        svg {
+            color: $color-primary !important;
+
+            path {
+                fill: $color-primary !important;
+            }
+        }
+    }
+
+    .MuiButtonBase-root.MuiChip-root {
+
+        &:hover,
+        &:focus,
+        &:active {
+            box-shadow: 0px 0px 0px 3px rgba(223, 223, 223, 1) !important;
+        }
+    }
+}
+
+.MuiDataGrid-columnHeaders.MuiDataGrid-withBorderColor {
+    background-color: $color-gray !important;
+}
+
+section {
+
+    .css-12slnd9,
+    .css-zgcvtz {
+        background-color: $color-gray !important;
+    }
+}
+
+.MuiDialogContent-root {
+    .css-1osn5kl {
+        width: auto;
+    }
+
+    .css-12slnd9 {
+        background: $color-gray;
+    }
+
+    .add-user-title {
+        font-family: $font-family-primary;
+
+        a {
+            color: $color-primary;
+        }
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    .helpText {
+        color: $color-primary !important;
+
+        .MuiSvgIcon-root {
+            padding-right: 5px;
+            color: $color-primary;
+        }
+    }
+}
+
+.MuiTypography-root {
+    font-family:
+        'Karbon',
+        -apple-system,
+        'Helvetica Neue',
+        Arial,
+        sans-serif,
+        serif !important;
+}
+
+.highlightText {
+    color: $color-primary !important;
+    font-weight: 500 !important;
+}
+
+.UserManagement {
+    .css-8q3uco {
+        background-color: $color-gray;
+    }
+}
+
+.customHeight {
+    background-color: $color-secondary !important;
+
+    button {
+        color: #fff;
+    }
+}
+
+.sectionContainer {
+    .sectionSubContainer {
+        .MuiButton-root {
+            background: #ededed;
+            color: #000000;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: #ffffff;
+                background-color: #4d4d4d;
+            }
+        }
+    }
+
+    &#asp-id,
+    &#app-change-process-id,
+    &#technical-user-management-id,
+    &#managed-connector-registration-id,
+    &#intro-id,
+    &#get-status-id,
+    &#manage-idps-id,
+    &#undefined {
+        background-color: rgba(250, 250, 250, 1) !important;
+    }
+}
+
+.header-section {
+    display: block;
+    @extend .global-background;
+
+    img {
+        visibility: hidden;
+    }
+}
+
+.table-container {
+    .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedStart {
+        &:hover {
+            border-color: $color-secondary;
+        }
+    }
 }
 
 // header
 .MenuInfo {
-  .MuiListItem-root {
-  }
+    .MuiListItem-root {}
 }
 
 .mobileNav {
-  .MuiSvgIcon-root {
-    color: $color-primary;
+    .MuiSvgIcon-root {
+        color: $color-primary;
 
-    path {
-      fill: $color-primary;
+        path {
+            fill: $color-primary;
+        }
     }
-  }
 }
 
 // notification blocks
 
 .frameContainer {
-  .frameButton {
-  }
+    .frameButton {}
 }
 
 // header style type 1
@@ -437,18 +435,19 @@ section {
 .companyRoleUpdate,
 .user-details,
 .my-account {
-  .css-1ookt9p,
-  .css-sbh4ys {
-    background: none;
-  }
 
-  > .MuiBox-root {
-    @extend .global-background;
-
-    svg {
-      display: none;
+    .css-1ookt9p,
+    .css-sbh4ys {
+        background: none;
     }
-  }
+
+    >.MuiBox-root {
+        @extend .global-background;
+
+        svg {
+            display: none;
+        }
+    }
 }
 
 // header style type 2
@@ -457,343 +456,340 @@ section {
 .app-user-management,
 .invite-main-container,
 .adminBoard {
-  > .MuiBox-root {
-    > .MuiBox-root {
-      background-color: transparent !important;
-    }
+    >.MuiBox-root {
+        >.MuiBox-root {
+            background-color: transparent !important;
+        }
 
-    display: block;
-    @extend .global-background;
+        display: block;
+        @extend .global-background;
 
-    > svg {
-      display: none;
+        >svg {
+            display: none;
+        }
     }
-  }
 }
 
 // header style type 3
 .appSubscription {
-  .subDescription {
-    a,
-    > span {
-      color: $color-primary;
+    .subDescription {
+
+        a,
+        >span {
+            color: $color-primary;
+        }
     }
-  }
 }
 
 // header style type 4
 
 .notifications {
-  .textNumber .value {
-    .MuiTypography-h2,
-    .MuiTypography-h3,
-    .MuiTypography-h4,
-    .MuiTypography-h5 {
-      color: $color-primary;
+    .textNumber .value {
+
+        .MuiTypography-h2,
+        .MuiTypography-h3,
+        .MuiTypography-h4,
+        .MuiTypography-h5 {
+            color: $color-primary;
+        }
     }
-  }
 
-  .group > li {
-    overflow: hidden;
-  }
-
-  .MuiBox-root {
-    a,
-    svg {
-      color: $color-primary;
-
-      path {
-        fill: $color-primary;
-      }
+    .group>li {
+        overflow: hidden;
     }
-  }
+
+    .MuiBox-root {
+
+        a,
+        svg {
+            color: $color-primary;
+
+            path {
+                fill: $color-primary;
+            }
+        }
+    }
 }
 
 // internal pages
 .desc-card,
 .app-store {
-  .card {
-    .MuiBox-root {
-      .MuiTypography-h5 {
-        font-size: 24px;
-      }
+    .card {
+        .MuiBox-root {
+            .MuiTypography-h5 {
+                font-size: 24px;
+            }
 
-      svg {
+            svg {
+                color: $color-primary;
+
+                path {
+                    fill: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+.searchContainer {}
+
+.filterSection {
+    .MuiSvgIcon-root {
         color: $color-primary;
 
         path {
-          fill: $color-primary;
+            fill: $color-primary;
         }
-      }
     }
-  }
-}
 
-.searchContainer {
-}
-
-.filterSection {
-  .MuiSvgIcon-root {
-    color: $color-primary;
-
-    path {
-      fill: $color-primary;
+    .sortSection * {
+        color: $color-secondary;
     }
-  }
-
-  .sortSection * {
-    color: $color-secondary;
-  }
 }
 
 [role='tabpanel'] {
-  .MuiGrid-root {
-    .MuiTypography-h5 {
-      color: #000000 !important;
-      font-weight: 500;
-      margin-bottom: 10px;
-    }
+    .MuiGrid-root {
+        .MuiTypography-h5 {
+            color: #000000 !important;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
 
-    .MuiTypography-caption3 {
-      color: $color-secondary !important;
-      font-weight: 500;
+        .MuiTypography-caption3 {
+            color: $color-secondary !important;
+            font-weight: 500;
+        }
     }
-  }
 }
 
 .role-agreements {
-  ul {
-    li {
-      .MuiTypography-caption3 {
-        color: $color-secondary !important;
-        font-size: 20px;
-        font-weight: 500;
-      }
+    ul {
+        li {
+            .MuiTypography-caption3 {
+                color: $color-secondary !important;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
     }
-  }
 }
 
 .appSubscription .appFilterSection .activeFilter {
-  border-color: $color-secondary !important;
+    border-color: $color-secondary !important;
 }
 
 .table-section {
-  .MuiChip-root {
-    margin-bottom: 10px;
-  }
+    .MuiChip-root {
+        margin-bottom: 10px;
+    }
 }
 
 // dialog
 .mui-dialog-heading {
-  font-size: 18px !important;
-  font-weight: 400 !important;
-  margin: 20px 0 0;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    margin: 20px 0 0;
 }
 
 table tr td {
-  font-family: $font-family-primary;
+    font-family: $font-family-primary;
 }
 
 .MuiDialog-container {
-  .role-overlay {
-    table {
-      padding: 0;
-      width: 100%;
+    .role-overlay {
+        table {
+            padding: 0;
+            width: 100%;
+        }
+
+        .role-list {
+            >span {
+                white-space: nowrap;
+                font-size: 18px;
+            }
+
+            >div {
+                margin: 10px 0;
+            }
+        }
     }
 
-    .role-list {
-      > span {
-        white-space: nowrap;
-        font-size: 18px;
-      }
-
-      > div {
-        margin: 10px 0;
-      }
+    .roles-heading,
+    .dialog-header-main {
+        .MuiTypography-h4 {
+            @extend .mui-dialog-heading;
+        }
     }
-  }
-
-  .roles-heading,
-  .dialog-header-main {
-    .MuiTypography-h4 {
-      @extend .mui-dialog-heading;
-    }
-  }
 }
 
 main {
-  .app-user-details-header-role {
-    border-color: $color-primary;
-  }
-
-  > .stage-home {
-    min-height: 630px;
-
-    .MuiTypography-h2 {
-      font-weight: 400;
+    .app-user-details-header-role {
+        border-color: $color-primary;
     }
 
-    img {
-      display: none !important;
+    >.stage-home {
+        min-height: 630px;
+
+        .MuiTypography-h2 {
+            font-weight: 400;
+        }
+
+        img {
+            display: none !important;
+        }
+
+        display: block;
+        @extend .global-background;
+
+        .MuiBox-root {
+            background: none !important;
+        }
+
+        .MuiTypography-h1 {}
+
+        .MuiTypography-h3 {}
     }
 
-    display: block;
-    @extend .global-background;
+    >.stage-app-store {
+        >.MuiBox-root {
+            background: none !important;
+        }
 
-    .MuiBox-root {
-      background: none !important;
+        .css-1ybz6by img {
+            display: none !important;
+        }
+
+        display: block;
+        @extend .global-background;
     }
 
-    .MuiTypography-h1 {
+    section .card {
+        background-color: #fff;
+        outline: 2px solid rgba(77, 77, 77, 0.2);
+
+        .MuiSvgIcon-root {
+            // color: $color-primary
+        }
     }
 
-    .MuiTypography-h3 {
-    }
-  }
+    .cardContainer {
+        border: 1px solid rgba(77, 77, 77, 0.2);
 
-  > .stage-app-store {
-    > .MuiBox-root {
-      background: none !important;
-    }
-
-    .css-1ybz6by img {
-      display: none !important;
+        .readMoreStyle {
+            color: $color-primary;
+        }
     }
 
-    display: block;
-    @extend .global-background;
-  }
+    .news-section {
+        max-width: 100%;
 
-  section .card {
-    background-color: #fff;
-    outline: 2px solid rgba(77, 77, 77, 0.2);
+        .css-13i92dq {
+            height: auto;
+        }
 
-    .MuiSvgIcon-root {
-      // color: $color-primary
+        .card .MuiTypography-h5 {
+            text-overflow: ellipsis;
+        }
     }
-  }
-
-  .cardContainer {
-    border: 1px solid rgba(77, 77, 77, 0.2);
-
-    .readMoreStyle {
-      color: $color-primary;
-    }
-  }
-
-  .news-section {
-    max-width: 100%;
-
-    .css-13i92dq {
-      height: auto;
-    }
-
-    .card .MuiTypography-h5 {
-      text-overflow: ellipsis;
-    }
-  }
 }
 
 .headerTitle h2,
 .headerTitle h3 {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .organization-section {
-  .css-12slnd9 {
-    background-color: $color-gray;
-  }
+    .css-12slnd9 {
+        background-color: $color-gray;
+    }
 }
 
 .edc-connector-header {
-  .css-51r4zw {
-    padding: 20px;
-    background-color: $color-gray;
-  }
+    .css-51r4zw {
+        padding: 20px;
+        background-color: $color-gray;
+    }
 }
 
 #provider-info,
 .MuiDialogContent-root {
-  table {
-    tbody,
-    thead {
-      tr {
-        th {
-          background-color: $color-gray !important;
+    table {
+
+        tbody,
+        thead {
+            tr {
+                th {
+                    background-color: $color-gray !important;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 .form-field label {
-  font-family: $font-family-primary;
+    font-family: $font-family-primary;
 }
 
 header .search-icon {
-  .MuiSvgIcon-root {
-    color: inherit;
-  }
+    .MuiSvgIcon-root {
+        color: inherit;
+    }
 }
 
 .slick-ul {
-  li {
-    cursor: pointer;
-  }
+    li {
+        cursor: pointer;
+    }
 
-  .slick-active {
-    background-color: $color-primary !important;
-  }
+    .slick-active {
+        background-color: $color-primary !important;
+    }
 }
 
 .orange-background-home {
-  display: block;
-  @extend .global-background;
+    display: block;
+    @extend .global-background;
 }
 
 .app-marketplace-main {
-  @extend .global-background;
+    @extend .global-background;
 }
 
 // stepper
 
 .stepperMain {
-  display: flex;
+    display: flex;
 
-  .stepperStep {
-    max-width: 100%;
+    .stepperStep {
+        max-width: 100%;
 
-    .stepIcon {
-    }
+        .stepIcon {}
 
-    .stepHead {
-      .hintStepMain {
-        .hintStepMobile {
+        .stepHead {
+            .hintStepMain {
+                .hintStepMobile {}
+            }
+
+            .stepHeadline {}
         }
-      }
-
-      .stepHeadline {
-      }
     }
-  }
 }
 
 .stepperHint {
-  .hintStep {
-  }
+    .hintStep {}
 }
 
 // footer
 footer {
-  background: none !important;
+    background: none !important;
 
-  .footer-head {
-    visibility: hidden;
-  }
+    .footer-head {
+        visibility: hidden;
+    }
 
-  .footer-content {
-    // @extend .global-background
-    // background: rgba(250, 250, 250, 1)
-    background: #fff;
-  }
+    .footer-content {
+        // @extend .global-background
+        // background: rgba(250, 250, 250, 1)
+        background: #fff;
+    }
 }
