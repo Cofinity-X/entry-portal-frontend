@@ -2,6 +2,7 @@ $color-primary: #d31184;
 $color-secondary: #4d4d4d;
 $color-gray: #f6f6f6;
 $mobile-enable-width: 1800px;
+$font-family-primary: 'Karbon', -apple-system, 'Helvetica Neue', Arial, sans-serif, serif !important;
 
 #app {
     position: relative;
@@ -186,15 +187,15 @@ section {
 // drop file
 
 #story--dropzone--drop-area--primary-inner .MuiTypography-body2 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 #story--dropzone--drop-area--primary-inner .MuiTypography-h3 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 #story--dropzone--drop-area--primary-inner .MuiSvgIcon-root {
-  color: $color-secondary;
+    color: $color-secondary;
 }
 
 // global elements
@@ -538,6 +539,8 @@ main {
     }
 
     .news-section {
+        max-width: 100%;
+
         .css-13i92dq {
             height: auto;
         }
@@ -548,9 +551,13 @@ main {
     }
 }
 
+.form-field label {
+    font-family: $font-family-primary;
+}
+
 header .search-icon {
     .MuiSvgIcon-root {
-        color: $color-primary;
+        color: inherit;
     }
 }
 
@@ -567,6 +574,36 @@ header .search-icon {
     @extend .global-background;
 }
 
+// stepper
+
+.stepperMain {
+    display: flex;
+
+    .stepperStep {
+
+        max-width: 100%;
+
+        .stepIcon {}
+
+        .stepHead {
+
+
+            .hintStepMain {
+                .hintStepMobile {}
+            }
+
+            .stepHeadline {}
+        }
+    }
+}
+
+.stepperHint {
+
+    .hintStep {}
+}
+
+
+// footer
 footer {
     .footer-head {
         visibility: hidden;

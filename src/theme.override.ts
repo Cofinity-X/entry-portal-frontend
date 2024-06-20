@@ -84,7 +84,7 @@ const paletteDefinitions = {
   },
   brand: {
     brand01: COLOR_PALETTE.PRIMARY,
-    brand02: '#B3CB2D',
+    brand02: COLOR_PALETTE.SUCCESS,
   },
   action: {
     active: COLOR_PALETTE.WHITE,
@@ -153,8 +153,8 @@ const paletteDefinitions = {
     bgDefault: '#c7c5c5',
   },
   stepper: {
-    stepDone: '#B3CB2D',
-    stepCurrent: '#FFA600',
+    stepDone: COLOR_PALETTE.SUCCESS,
+    stepCurrent: COLOR_PALETTE.WARNING,
     stepUpcoming: '#EAEAEA',
   },
   background: {
