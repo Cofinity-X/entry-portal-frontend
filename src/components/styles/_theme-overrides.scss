@@ -2,10 +2,18 @@ $color-primary: #d31184;
 $color-secondary: #4d4d4d;
 $color-gray: #f6f6f6;
 $mobile-enable-width: 1800px;
-$font-family-primary: 'Karbon', -apple-system, 'Helvetica Neue', Arial, sans-serif, serif !important;
+$font-family-primary: 'Karbon',
+    -apple-system,
+    'Helvetica Neue',
+    Arial,
+    sans-serif,
+    serif !important;
+
+$navigation-height-balance: 65px;
 
 #app {
     position: relative;
+    margin-top: $navigation-height-balance;
 }
 
 //mobile layout
@@ -33,6 +41,18 @@ header {
     align-items: center;
     background: #fff;
     padding: 10px 5px;
+    border-bottom: 2px solid $color-gray;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+a.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mobileHeaderRight {
@@ -60,7 +80,7 @@ header {
 
 .mobile-search-icon {
     margin-right: 10px;
-    color: #0f71cb;
+    color: $color-primary;
     position: relative;
     z-index: -9;
     cursor: pointer;
@@ -118,19 +138,49 @@ section {
     }
 }
 
+.stage-app-store {
+    .MuiTypography-h2 {
+        font-weight: 400;
+    }
+}
+
+.document-button-link {
+    font-family: $font-family-primary;
+    color: $color-secondary !important
+}
+
 .appCertificate .mainContainer {
     max-width: 100%;
     padding: 0 180px !important;
 }
 
-.notifications .group>li {
-    margin-right: 10px;
-    margin-left: 10px;
+.notifications {
+    .group {
+        .longMiddleSection {
+            .content {
+                font-family: $font-family-primary;
+
+                pre {
+                    font-size: 13px;
+                }
+
+                strong {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        >li {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
 }
 
 .user-management-section {
     padding-right: 180px;
     padding-left: 180px;
+    background: none !important;
 }
 
 .table-container {
@@ -246,7 +296,34 @@ main {
     background-color: $color-gray !important;
 }
 
+section {
+
+    .css-12slnd9,
+    .css-zgcvtz {
+        background-color: $color-gray !important;
+    }
+}
+
+
 .MuiDialogContent-root {
+
+
+    .css-1osn5kl {
+        width: auto;
+    }
+
+    .css-12slnd9 {
+        background: $color-gray;
+    }
+
+    .add-user-title {
+        font-family: $font-family-primary;
+
+        a {
+            color: $color-primary;
+        }
+    }
+
     a {
         text-decoration: none !important;
     }
@@ -274,6 +351,12 @@ main {
 .highlightText {
     color: $color-primary !important;
     font-weight: 500 !important;
+}
+
+.UserManagement {
+    .css-8q3uco {
+        background-color: $color-gray;
+    }
 }
 
 .customHeight {
@@ -343,9 +426,24 @@ main {
     }
 }
 
+// notification blocks
+
+.frameContainer {
+    .frameButton {}
+}
+
 // header style type 1
 .partner-network-page-container,
+.usecase-participation,
+.companyRoleUpdate,
+.user-details,
 .my-account {
+
+    .css-1ookt9p,
+    .css-sbh4ys {
+        background: none
+    }
+
     >.MuiBox-root {
         @extend .global-background;
 
@@ -416,9 +514,16 @@ main {
     }
 }
 
-.desc-card {
+// internal pages
+.desc-card,
+.app-store {
     .card {
+
         .MuiBox-root {
+            .MuiTypography-h5 {
+                font-size: 24px;
+            }
+
             svg {
                 color: $color-primary;
 
@@ -483,7 +588,46 @@ main {
     }
 }
 
-// main theme
+// dialog 
+.mui-dialog-heading {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    margin: 20px 0 0
+}
+
+table tr td {
+    font-family: $font-family-primary;
+}
+
+.MuiDialog-container {
+
+    .role-overlay {
+        table {
+            padding: 0;
+            width: 100%;
+        }
+
+        .role-list {
+            >span {
+                white-space: nowrap;
+                font-size: 18px;
+            }
+
+            >div {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .roles-heading,
+    .dialog-header-main {
+        .MuiTypography-h4 {
+            @extend .mui-dialog-heading
+        }
+    }
+}
+
+
 main {
     .app-user-details-header-role {
         border-color: $color-primary;
@@ -491,6 +635,10 @@ main {
 
     >.stage-home {
         min-height: 630px;
+
+        .MuiTypography-h2 {
+            font-weight: 400;
+        }
 
         img {
             display: none !important;
@@ -551,6 +699,41 @@ main {
     }
 }
 
+.headerTitle h2,
+.headerTitle h3 {
+    font-weight: 400;
+}
+
+.organization-section {
+    .css-12slnd9 {
+
+        background-color: $color-gray;
+    }
+}
+
+.edc-connector-header {
+    .css-51r4zw {
+        padding: 20px;
+        background-color: $color-gray;
+    }
+}
+
+#provider-info,
+.MuiDialogContent-root {
+    table {
+
+        tbody,
+        thead {
+            tr {
+                th {
+                    background-color: $color-gray !important;
+                }
+            }
+        }
+    }
+
+}
+
 .form-field label {
     font-family: $font-family-primary;
 }
@@ -561,8 +744,14 @@ header .search-icon {
     }
 }
 
-.slick-ul .slick-active {
-    background-color: $color-primary !important;
+.slick-ul {
+    li {
+        cursor: pointer;
+    }
+
+    .slick-active {
+        background-color: $color-primary !important;
+    }
 }
 
 .orange-background-home {
@@ -580,14 +769,11 @@ header .search-icon {
     display: flex;
 
     .stepperStep {
-
         max-width: 100%;
 
         .stepIcon {}
 
         .stepHead {
-
-
             .hintStepMain {
                 .hintStepMobile {}
             }
@@ -598,13 +784,13 @@ header .search-icon {
 }
 
 .stepperHint {
-
     .hintStep {}
 }
 
-
 // footer
 footer {
+    background: none !important;
+
     .footer-head {
         visibility: hidden;
     }

@@ -84,7 +84,7 @@ const paletteDefinitions = {
   },
   brand: {
     brand01: COLOR_PALETTE.PRIMARY,
-    brand02: COLOR_PALETTE.SUCCESS,
+    brand02: '#B3CB2D',
   },
   action: {
     active: COLOR_PALETTE.WHITE,
@@ -155,7 +155,7 @@ const paletteDefinitions = {
   stepper: {
     stepDone: COLOR_PALETTE.SUCCESS,
     stepCurrent: COLOR_PALETTE.WARNING,
-    stepUpcoming: '#EAEAEA',
+    stepUpcoming: COLOR_PALETTE.INFO,
   },
   background: {
     background01: '#ffffff',
@@ -260,34 +260,34 @@ export const typographyDefinitions = {
   h4: {
     fontFamily: getFontFamily('Karbon'),
     fontWeight: 500,
-    fontSize: 36,
+    fontSize: 24,
     lineHeight: '110%',
     letterSpacing: 0,
   },
   h5: {
     fontFamily: getFontFamily('Karbon'),
     fontWeight: 600,
-    fontSize: 32,
+    fontSize: 20,
     lineHeight: '110%',
     letterSpacing: 0,
   },
   h6: {
     fontFamily: getFontFamily('Karbon'),
     fontWeight: 600,
-    fontSize: 28,
+    fontSize: 16,
     lineHeight: '110%',
     letterSpacing: 0,
   },
   body1: {
     fontFamily: getFontFamily('Karbon'),
-    fontWeight: 300,
+    fontWeight: 400,
     fontSize: 20,
     lineHeight: '140%',
     letterSpacing: 0,
   },
   body2: {
     fontFamily: getFontFamily('Karbon'),
-    fontWeight: 300,
+    fontWeight: 400,
     fontSize: 18,
     lineHeight: '140%',
     letterSpacing: 0,
@@ -502,7 +502,9 @@ const customTheme = {
           textTransform: 'none',
           fontWeight: '600',
           fontFamily: FONT_PALETTE.PRIMARY,
-
+          '&.Mui-disabled': {
+            background: COLOR_PALETTE.GRAY,
+          },
           ':focus': {
             boxShadow: `0px 0px 0px 3px ${COLOR_PALETTE.BOX_SHADOW}`,
             color: COLOR_PALETTE.WHITE,
@@ -516,6 +518,7 @@ const customTheme = {
           ':hover': {
             boxShadow: `0px 0px 0px 3px ${COLOR_PALETTE.BOX_SHADOW}`,
           },
+
           '& .MuiButton-icon .MuiCircularProgress-root .MuiCircularProgress-circle':
             {
               color: COLOR_PALETTE.WHITE,
@@ -783,6 +786,9 @@ const customTheme = {
         },
         cell: {
           fontSize: 16,
+          '& .Mui-disabled': {
+            color: COLOR_PALETTE.GRAY,
+          },
         },
         root: {
           borderRadius: 0,
@@ -898,10 +904,14 @@ const customTheme = {
           margin: '12px 0 12px',
           fontSize: '20px',
           overflow: 'hidden',
-          height: '24px',
+          height: 'auto',
           '& .MuiSvgIcon-root': {
             color: COLOR_PALETTE.SECONDARY,
           },
+          '& .MuiTypography-h4': {
+            fontSize: '18px',
+          },
+
           '&.Mui-expanded': {
             margin: '12px 0 12px',
             padding: 0,
