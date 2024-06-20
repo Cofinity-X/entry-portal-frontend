@@ -84,7 +84,7 @@ const paletteDefinitions = {
   },
   brand: {
     brand01: COLOR_PALETTE.PRIMARY,
-    brand02: '#B3CB2D',
+    brand02: COLOR_PALETTE.SUCCESS,
   },
   action: {
     active: COLOR_PALETTE.WHITE,
@@ -426,6 +426,17 @@ const customTheme = {
             {
               backgroundColor: 'transparent !important',
             },
+          '& textarea': {
+            fontSize: 20,
+            backgroundColor: '#FAFAFA',
+            border: 0,
+            borderBottom: '1px solid #4D4D4D',
+            lineHeight: '24px',
+            padding: 20,
+            fontFamily: FONT_PALETTE.PRIMARY,
+            outline: 'none !important',
+            height: '150px !important',
+          },
         },
       },
     },
@@ -808,10 +819,19 @@ const customTheme = {
         },
       },
     },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          fontSize: 16,
+        },
+      },
+    },
+
     MuiFilledInput: {
       styleOverrides: {
         root: {
           backgroundColor: '#FAFAFA',
+          fontSize: 20,
           '&:after': {
             backgroundColor: COLOR_PALETTE.GRAY,
             borderColor: COLOR_PALETTE.GRAY,
@@ -820,6 +840,9 @@ const customTheme = {
             backgroundColor: COLOR_PALETTE.GRAY,
             borderColor: COLOR_PALETTE.GRAY,
           },
+        },
+        input: {
+          fontSize: 20,
         },
       },
     },
