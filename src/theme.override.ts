@@ -3,6 +3,7 @@ import { deepmerge } from '@mui/utils'
 import { theme } from '@catena-x/portal-shared-components'
 import createPalette from '@mui/material/styles/createPalette'
 import createTypography from '@mui/material/styles/createTypography'
+import { BorderColor } from '@mui/icons-material'
 
 const getFontFamily = (name: string): string =>
   [
@@ -449,6 +450,29 @@ const customTheme = {
         },
       },
     },
+    MuiTabs: {
+      styleOverrides: {
+        flexContainer: {
+          color: COLOR_PALETTE.BLACK,
+
+          '& .MuiButtonBase-root': {
+            fontSize: 20,
+            alignItems: 'center',
+          },
+          '& .MuiTypography-label3': {
+            backgroundColor: COLOR_PALETTE.PRIMARY,
+            outlineColor: COLOR_PALETTE.PRIMARY,
+            color: COLOR_PALETTE.WHITE,
+          },
+
+          '& .Mui-selected': {
+            color: `${COLOR_PALETTE.BLACK} !important`,
+
+            borderBottom: `1px solid ${COLOR_PALETTE.BLACK} !important`,
+          },
+        },
+      },
+    },
     MuiLink: {
       styleOverrides: {
         root: {
@@ -488,6 +512,11 @@ const customTheme = {
           fontWeight: 400,
           '& p': {
             fontSize: '18px',
+          },
+          '& a': {
+            textDecoration: 'none',
+            color: `${COLOR_PALETTE.BLACK} !important`,
+            fontSize: `18px !important`,
           },
         },
       },
