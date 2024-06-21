@@ -453,22 +453,27 @@ const customTheme = {
     MuiTabs: {
       styleOverrides: {
         flexContainer: {
-          color: COLOR_PALETTE.BLACK,
+          color: '#4D4D4D',
+          borderBottom: '1px solid #EDEDED',
 
           '& .MuiButtonBase-root': {
             fontSize: 20,
             alignItems: 'center',
+            color: '#4D4D4D',
+            textTransform: 'uppercase !important',
           },
           '& .MuiTypography-label3': {
-            backgroundColor: COLOR_PALETTE.PRIMARY,
-            outlineColor: COLOR_PALETTE.PRIMARY,
+            backgroundColor: '#4D4D4D',
+            outlineColor: '#4D4D4D',
             color: COLOR_PALETTE.WHITE,
           },
 
           '& .Mui-selected': {
-            color: `${COLOR_PALETTE.BLACK} !important`,
+            color: `${COLOR_PALETTE.PRIMARY} !important`,
 
-            borderBottom: `1px solid ${COLOR_PALETTE.BLACK} !important`,
+            // borderBottom: `1px solid ${COLOR_PALETTE.BLACK} !important`,
+            borderBottom: '1px solid #EDEDED !important',
+            // borderBottom: `none !important`,
           },
         },
       },
@@ -828,6 +833,11 @@ const customTheme = {
           fontSize: 16,
           '& .Mui-disabled': {
             color: COLOR_PALETTE.GRAY,
+          },
+        },
+        row: {
+          '&.Mui-selected': {
+            backgroundColor: '#F6F6F6 !important',
           },
         },
         root: {
