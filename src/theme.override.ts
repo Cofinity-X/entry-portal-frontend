@@ -531,6 +531,15 @@ const customTheme = {
       defaultProps: {
         disableRipple: true,
       },
+      root: {
+        '&.MuiRadio-root:hover, &.MuiRadio-root:active,&.MuiRadio-root:focus': {
+          boxShadow: '0px 0px 0px 3px rgba(223, 223, 223, 1) !important',
+        },
+        '&.MuiCheckbox-root:hover, &.MuiCheckbox-root:active,&.MuiCheckbox-root:focus':
+          {
+            boxShadow: '0px 0px 0px 3px rgba(223, 223, 223, 1) !important',
+          },
+      },
     },
 
     MuiCustomAccordion: {

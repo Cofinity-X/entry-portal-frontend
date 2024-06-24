@@ -881,6 +881,9 @@ main {
   label {
     font-family: $font-family-primary;
   }
+
+  .MuiTypography-body1 {
+  }
 }
 
 header .search-icon {
@@ -908,6 +911,24 @@ header .search-icon {
   @extend .global-background;
 }
 
+//cards
+
+// main {
+//     section {
+//         .card {
+//             .MuiBox-root {
+//                 padding-top: 0 !important;
+
+//                 img {
+//                     width: 100% !important;
+//                     min-height: 120px;
+//                     border-radius: 0 !important;
+//                 }
+//             }
+//         }
+//     }
+// }
+
 // steps
 .steps-main {
   .css-gwnvmy {
@@ -928,12 +949,12 @@ header .search-icon {
   .stepperStep {
     max-width: 100%;
 
-    .stepIcon {
-    }
-
     .stepHead {
       .hintStepMain {
-        .hintStepMobile {
+        .stepIcon {
+          .MuiTypography-body1 {
+            // background-color: red;
+          }
         }
       }
 
@@ -962,6 +983,11 @@ header .search-icon {
 // footer
 footer {
   background: none !important;
+
+  .copyright {
+    font-family: $font-family-primary;
+    font-size: 16px;
+  }
 
   .footer-head {
     visibility: hidden;
