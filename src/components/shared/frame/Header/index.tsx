@@ -156,7 +156,7 @@ export const Header = ({ main, user }: { main: Tree[]; user: string[] }) => {
     <>
       <header>
         <MainNavigation items={menu} component={NavLink}>
-          <Logo />
+          <LogoImage />
           <div className="d-flex">
             <div
               onClick={() => dispatch(setAppear({ SEARCH: !visible }))}
