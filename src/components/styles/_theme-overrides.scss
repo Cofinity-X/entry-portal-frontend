@@ -2,15 +2,14 @@ $color-primary: #d31184;
 $color-secondary: #4d4d4d;
 $color-gray: #f6f6f6;
 $mobile-enable-width: 1800px;
-$font-family-primary:
-  'Karbon',
+$font-family-primary: 'Karbon',
   -apple-system,
   'Helvetica Neue',
   Arial,
   sans-serif,
   serif !important;
 
-$navigation-height-balance: 63px;
+$navigation-height-balance: 85px;
 $enable-desktop-nav: 1;
 
 body {
@@ -107,11 +106,22 @@ header {
 @media (min-width: 1499px) {
   #app {
     position: relative;
-    margin-top: 0;
+    // margin-top: 0;
   }
 
   header {
     display: block;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: auto;
+    right: auto;
+    max-width: 1800px;
+  }
+
+  main .customHeight {
+    top: 85px !important;
   }
 
   .mobileHeader,
@@ -210,7 +220,7 @@ section {
       }
     }
 
-    > li {
+    >li {
       margin-right: 10px;
       margin-left: 10px;
     }
@@ -291,8 +301,7 @@ section {
 
 // global elements
 .global-background {
-  background: rgba(250, 250, 250, 1)
-    url(../../../../../public/images/Pattern-cfx.svg) top right no-repeat;
+  background: rgba(250, 250, 250, 1) url(../../../../../public/images/Pattern-cfx.svg) top right no-repeat;
   background-size: contain;
 }
 
@@ -331,6 +340,7 @@ main {
   }
 
   .MuiButtonBase-root.MuiChip-root {
+
     &:hover,
     &:focus,
     &:active {
@@ -344,6 +354,7 @@ main {
 }
 
 section {
+
   .css-12slnd9,
   .css-zgcvtz {
     background-color: $color-gray !important;
@@ -413,12 +424,12 @@ section {
   .subNavigationContainer {
     .navigationParentContainer {
       .navigationOverlayContainer {
-        > .MuiSvgIcon-root {
+        >.MuiSvgIcon-root {
           color: $color-primary;
           fill: $color-primary;
         }
 
-        > .MuiTypography-h4 {
+        >.MuiTypography-h4 {
           color: $color-primary;
         }
 
@@ -432,7 +443,7 @@ section {
             color: #4d4d4d;
           }
 
-          > div {
+          >div {
             padding: 5px;
             margin-bottom: 5px;
 
@@ -545,23 +556,22 @@ section {
 .app-release-process-form,
 main,
 .my-account {
+
   .css-1ookt9p,
   .css-sbh4ys {
     background: none;
   }
 
-  > .MuiBox-root:not(
-      .app-back,
-      .connector-page-container > .MuiBox-root,
-      .service-back,
-      .service-marketplace-content,
-      .policy-main,
-      .customHeight,
-      .overview-section,
-      .company-certificate-section,
-      .css-8q3uco,
-      .mainWrapper
-    ) {
+  >.MuiBox-root:not(.app-back,
+    .connector-page-container > .MuiBox-root,
+    .service-back,
+    .service-marketplace-content,
+    .policy-main,
+    .customHeight,
+    .overview-section,
+    .company-certificate-section,
+    .css-8q3uco,
+    .mainWrapper) {
     @extend .global-background;
 
     svg {
@@ -576,15 +586,15 @@ main,
 .app-user-management,
 .invite-main-container,
 .adminBoard {
-  > .MuiBox-root {
-    > .MuiBox-root {
+  >.MuiBox-root {
+    >.MuiBox-root {
       background-color: transparent !important;
     }
 
     display: block;
     @extend .global-background;
 
-    > svg {
+    >svg {
       display: none;
     }
   }
@@ -593,8 +603,9 @@ main,
 // header style type 3
 .appSubscription {
   .subDescription {
+
     a,
-    > span {
+    >span {
       color: $color-primary;
     }
   }
@@ -646,6 +657,7 @@ main,
   }
 
   .textNumber .value {
+
     .MuiTypography-h2,
     .MuiTypography-h3,
     .MuiTypography-h4,
@@ -654,11 +666,12 @@ main,
     }
   }
 
-  .group > li {
+  .group>li {
     overflow: hidden;
   }
 
   .MuiBox-root {
+
     a,
     svg {
       color: $color-primary;
@@ -701,8 +714,7 @@ main,
   }
 }
 
-.searchContainer {
-}
+.searchContainer {}
 
 .filterSection {
   .MuiSvgIcon-root {
@@ -774,12 +786,12 @@ table tr td {
     }
 
     .role-list {
-      > span {
+      >span {
         white-space: nowrap;
         font-size: 18px;
       }
 
-      > div {
+      >div {
         margin: 10px 0;
       }
     }
@@ -798,7 +810,7 @@ main {
     border-color: $color-primary;
   }
 
-  > .stage-home {
+  >.stage-home {
     min-height: 630px;
 
     .MuiTypography-h2 {
@@ -820,15 +832,13 @@ main {
       background: none !important;
     }
 
-    .MuiTypography-h1 {
-    }
+    .MuiTypography-h1 {}
 
-    .MuiTypography-h3 {
-    }
+    .MuiTypography-h3 {}
   }
 
-  > .stage-app-store {
-    > .MuiBox-root {
+  >.stage-app-store {
+    >.MuiBox-root {
       background: none !important;
     }
 
@@ -892,6 +902,7 @@ main {
 .MuiDialogContent-root,
 .marketplace-main {
   table {
+
     tbody,
     thead {
       tr {
@@ -908,8 +919,7 @@ main {
     font-family: $font-family-primary;
   }
 
-  .MuiTypography-body1 {
-  }
+  .MuiTypography-body1 {}
 }
 
 header .search-icon {
@@ -984,15 +994,13 @@ header .search-icon {
         }
       }
 
-      .stepHeadline {
-      }
+      .stepHeadline {}
     }
   }
 }
 
 .stepperHint {
-  .hintStep {
-  }
+  .hintStep {}
 }
 
 // modal
